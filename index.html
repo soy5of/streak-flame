@@ -2,14 +2,32 @@
 <html  lang="en">
     <head>
         <meta charset="UTF-8" />
+        <!-- Changes Android Chrome tab color -->
+        <meta name="theme-color" content="#FFB6C1">
+    
+        <!-- iOS Safari tab color -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="theme-color" content="#FF0000"> <!--red color for mobile-->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+        <meta name="description" content="A mega-super-cool App for tracking your time">
+        <meta name="keywords" content="task, tracker, streak-flame">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Sofia D">
+
+        <meta property="og:title" content="Streak Flame"> 
+        <meta property="og:description" content="A custom task-tracker app for you"> 
+        <meta property="og:image" content="">
+
         <title> Welcome to your tasklist</title>
         <link rel="stylesheet" href="./style.css">
         
         <!-- add these later 
         <link rel="manifest" href="manifest.json">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <link rel="apple-touch-icon" href="icons/icon-192.png">-->
     </head>
 
@@ -20,9 +38,20 @@
         <main>
             <h1 id="title" align="center">Once a spark wanted to become a flame...</h1>
             <!-- TODO: I want a cute animation here, then when a spark meets its match it lights a candle then the text below appears -->
-            <p align="center">Press <em>[enter]</em> to see your story</p> <!--next key here and navigateto sign in page-->
+            <p align="center">Press <em>[enter]</em> to see your story</p> <!--next key here and navigate to sign in page-->
             <a href="/future-you">Create your best version</a>
             <button>START NOW!</button>
+            <!-- Flame icon
+            <div class="task-item">
+                <span class="task-flame"></span>
+                <span>Complete daily streak!</span>
+            </div>-->
+              <video
+                width="1080"
+                autoplay
+                muted>
+                <source src="/resources/introcutted.mp4" type="video/mp4">
+              </video>
         </main>
 
         <footer>

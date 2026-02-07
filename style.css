@@ -1,3 +1,22 @@
+body { background-color: #000000; }
+
 #title {
   color: red;
+}
+
+.task-flame {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  background: linear-gradient(to bottom, #ff6b00, #ffa500, #ffff00);
+  border-radius: 50% 50% 20% 20%;
+  position: relative;
+  animation: flicker 0.5s infinite alternate;
+  box-shadow: 0 0 20px #ff8c00;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(0.9); opacity: 0.8; }
+  100% { transform: scale(1.1); opacity: 1; }
 }
